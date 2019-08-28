@@ -1,4 +1,4 @@
-package com.aias.demo;
+package com.aias.demo.bean;
 
 import java.io.Serializable;
 

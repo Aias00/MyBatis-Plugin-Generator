@@ -5,6 +5,10 @@ import java.util.List;
 
 public class UserExample {
     protected String orderByClause;
+    /**
+     * 自己添加的limit，用于分页（但是生成之后会被覆盖）
+     */
+    protected String limitClause;
 
     protected boolean distinct;
 
@@ -16,6 +20,14 @@ public class UserExample {
 
     public void setOrderByClause(String orderByClause) {
         this.orderByClause = orderByClause;
+    }
+
+    public String getLimitClause() {
+        return limitClause;
+    }
+
+    public void setLimitClause(String limitClause) {
+        this.limitClause = limitClause;
     }
 
     public String getOrderByClause() {
@@ -60,6 +72,7 @@ public class UserExample {
     public void clear() {
         oredCriteria.clear();
         orderByClause = null;
+        limitClause = null;
         distinct = false;
     }
 

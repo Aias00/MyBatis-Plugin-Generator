@@ -1,6 +1,6 @@
-package com.aias.demo;
+package com.aias.demo.dao;
 
-import com.aias.demo.User;
+import com.aias.demo.bean.User;
 import com.aias.demo.UserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;

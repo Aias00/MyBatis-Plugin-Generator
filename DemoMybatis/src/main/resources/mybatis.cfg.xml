@@ -43,5 +43,7 @@
    		
   		
     </typeAliases>
-	
+	<plugins>
+		<plugin interceptor="com.aias.demo.MyMyBatisPlugin"></plugin>
+	</plugins>
 </configuration>
